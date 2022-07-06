@@ -6,6 +6,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -36,5 +38,6 @@ public class QuotesAPI {
         Quotes quotes = objectMapper.convertValue(map, Quotes.class);
         System.out.println(quotes.getContent());
         System.out.println(quotes.getAuthor());
+        System.out.println("\ud83d\ude00");
     }
 }
